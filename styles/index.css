@@ -1,0 +1,329 @@
+@import './reset.css';
+body {
+  box-sizing: border-box;
+}
+
+.App {
+  margin-left: 320px;
+  border-left: 1px solid rgb(209, 209, 209);
+  height: 100vh;
+}
+
+.container {
+  width: 1440px;
+}
+
+.border-general {
+  display: flex;
+  border-right: 1px solid rgb(209, 209, 209);
+  height: 100vh;
+}
+
+.text-main {
+  color: rgb(66, 86, 122);
+  font-weight: 700;
+  font-size: 56px;
+  font-family: "PT Sans", sans-serif;
+  margin-left: 80px;
+  margin-top: 165px;
+}
+
+.left-border {
+  width: 5px;
+  background: linear-gradient(to bottom, rgb(56, 119, 238), rgb(239, 93, 168));
+  margin-top: 177px;
+  height: 120px;
+  position: absolute;
+}
+
+.center {
+  margin-left: 720px;
+  position: absolute;
+}
+
+.center-border {
+  border-right: 1px solid rgb(209, 209, 209);
+  height: 100vh;
+}
+
+.circle {
+  border-radius: 50%;
+  border: 1px solid rgb(209, 209, 209);
+  width: 536px;
+  height: 536px;
+  margin-left: 452px;
+  margin-top: 215px;
+  position: absolute;
+}
+
+.center-border2 {
+  border-bottom: 1px solid rgb(209, 209, 209);
+  width: 1440px;
+  padding-top: 480px;
+  position: absolute;
+}
+
+.text-year {
+  display: flex;
+  justify-content: space-around;
+  width: 1200px;
+  margin-left: -65%;
+  margin-top: 30%;
+  font-size: 200px;
+  font-family: "PT Sans", sans-serif;
+}
+
+.blue {
+  color: rgb(105, 80, 247);
+}
+
+.pink {
+  color: rgb(239, 93, 168);
+}
+
+.date-h2 {
+  color: rgb(116, 116, 116);
+  font-weight: 600;
+  font-family: "PT Sans", sans-serif;
+}
+
+.square {
+  position: absolute;
+  transition: all 0.25s linear;
+  border: 1px solid #000;
+}
+
+.circle-container {
+  transform: translate(-50%, -50%);
+}
+
+.btn-container {
+  position: absolute;
+  z-index: 99;
+  margin-top: 47px;
+  margin-left: -350px;
+}
+
+.arrow {
+  background: url(../img/arrow1.png);
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  opacity: 50%;
+}
+.arrow:hover {
+  opacity: 100%;
+}
+
+.arrow1 {
+  background: url(../img/arrow2.png);
+  background-repeat: no-repeat;
+  opacity: 50%;
+  width: 52px;
+  height: 52px;
+}
+.arrow1:hover {
+  opacity: 100%;
+}
+
+.circle-item {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background: #fff;
+  position: absolute;
+}
+
+.timeline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  margin-top: -340px;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.year-card {
+  text-align: center;
+  flex: 1;
+  padding: 20px;
+  background-color: white;
+  margin-top: -140px;
+  border-radius: 10px;
+  font-family: "PT Sans", sans-serif;
+  transition: opacity 0.5s, transform 0.5s;
+}
+.year-card h3 {
+  color: #1565c0;
+  font-size: 20px;
+}
+.year-card p {
+  color: #979696;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.hidden {
+  display: none;
+}
+
+.next-btn {
+  background-color: #f5f7fa;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  margin-top: -60px;
+  transform: translateY(-50%);
+  right: -50px;
+}
+.next-btn:hover {
+  background-color: #e0e0e0;
+}
+
+@media (max-width: 768px) {
+  .App {
+    margin-left: 0;
+    padding: 10px;
+    height: auto;
+  }
+  .container {
+    width: 100%;
+    padding: 0;
+  }
+  .border-general {
+    flex-direction: column;
+    border: none;
+    height: auto;
+  }
+  .text-main {
+    font-size: 36px;
+    margin: 20px 0;
+    text-align: center;
+  }
+  .left-border {
+    width: 3px;
+    height: 80px;
+    position: static;
+    margin: 20px auto;
+  }
+  .center {
+    margin-left: 0;
+    width: 100%;
+    position: static;
+  }
+  .circle {
+    border-radius: 50%;
+    border: 1px solid rgb(209, 209, 209);
+    width: 300px;
+    height: 300px;
+    margin-left: 0;
+    margin-top: 0;
+    position: static;
+  }
+  .center-border2 {
+    border-bottom: none;
+    padding-top: 20px;
+    width: 100%;
+  }
+  .text-year {
+    width: 100%;
+    font-size: 100px;
+    justify-content: space-between;
+    margin: 0;
+  }
+  .blue, .pink {
+    font-size: 60px;
+  }
+  .btn-container {
+    margin-left: 0;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  .arrow, .arrow1 {
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+  }
+  .timeline {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .year-card {
+    margin-top: 20px;
+    width: 100%;
+    padding: 15px;
+  }
+  .year-card h3 {
+    font-size: 18px;
+  }
+  .year-card p {
+    font-size: 12px;
+  }
+  .next-btn {
+    display: none;
+  }
+  .circle-item {
+    width: 16px;
+    height: 16px;
+  }
+}
+@media (max-width: 480px) {
+  .text-main {
+    margin: 59px 0 0 20px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: start;
+  }
+  .left-border {
+    display: none;
+  }
+  .circle {
+    border: 1px solid white;
+    margin-top: 100px;
+    margin-left: 10%;
+  }
+  .text-year {
+    font-size: 80px;
+  }
+  .blue, .pink {
+    font-size: 56px;
+    font-weight: 700;
+  }
+  .btn-container {
+    top: 605px;
+    justify-content: start;
+    flex-direction: column;
+    align-items: start;
+  }
+  .date-h2 {
+    font-weight: 400;
+  }
+  .flex {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin: 10px 0 0 -5px;
+  }
+  .timeline {
+    top: -153px;
+  }
+  .year-card {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
